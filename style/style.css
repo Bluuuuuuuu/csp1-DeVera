@@ -10,9 +10,12 @@ html {
 }
 body {
 	font-family:  "Montserrat", sans-serif;
-	background-color: #95A5A6;
+	background-color: #F2F3F4;
 }
+hr {
 
+	box-shadow: 0 20px 20px -20px #333;
+}
 .banner { 
 	background-image: linear-gradient(rgba(0,0,0,0.75), 
 	rgba(0, 0, 0, 0.75)), 
@@ -22,12 +25,30 @@ body {
 	box-shadow: 0 20px 20px -20px #333;
 	border-radius:  0;
  }
-#devpic {
-	width: 200px;
-	width: 250px;
+ #workimg {
+ 	width: 400px;
+ 	height: 500px;
+ }
+.devtools {
+	background-image: url(https://images.pexels.com/photos/1158394/pexels-photo-1158394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	border-radius: 0;
+	box-shadow: 0 20px 20px -20px #333;
+	background-size: cover;
+	background-position: center;
+}
+#carouselimg {
+	width: 300px;
+ 	height: 450px;
+ 	filter: grayscale(40%) drop-shadow(12px 12px 10px black);
+ 	border: 1px solid black;
 
 }
- 
+#projectsimgshadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.carouselshadow {
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
  #navlinks {
  	position: relative;
  	text-decoration: none;
@@ -41,30 +62,88 @@ body {
 
  	color:  #FF835F;
  }
+ #name {
+ 	 color:  #FF835F;
+ }
 #devpic {
 	width: 300px;
 	height: 300px;
-	filter: grayscale(40%);
+
+	filter: grayscale(40%) drop-shadow(12px 12px 10px black);
 }
 
 
-         .btn-grad {background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%)}
-         .btn-grad {
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            font-family: montserrat;
-            font-weight: bold;
-            border-radius: 10px;
-            display: block;
-          }
+.btn-grad {
+	background-image: 
+	linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, 
+	#757F9A  100%)}
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    font-family: montserrat;
+    font-weight: bold;
+    border-radius: 10px;
+    isplay: block;
+}
 
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(70, end),
+    blink-caret 0.80s step-end 1; 
+    border-right: .15em solid transparent;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gray; }
+}
+
+#divtools > div > img { 
+	width:  80px;
+	height: 80px;
+ }
+ #gmap {
+	height: 60vh;
+	width: 100%;
+}
+
+.form-control:focus {
+  border-color: #363636;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 63), 0 0 8px rgba(63, 0, 0, 0.6);
+}
+
+.img-wrapper {  
+ 
+  overflow: hidden; 
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+.inner-img:hover {
+  transform: scale(1.1);
+}
